@@ -1,0 +1,28 @@
+.feature{
+    width: 80%;
+    margin: 0 auto;
+    background-color: $primary-color;
+    box-shadow: 0 2rem 2rem rgba(black, .3);
+    padding: 2em 3em;
+    color: $primary-color;
+    
+
+    &__icon{
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        margin: 1em 0;
+        color: $color-headings;
+    }
+    &__heading{
+        margin-bottom: 1em;
+        color: $primary-color-light;
+    }
+    &__description{
+        font-size: $font-size-p;
+        color: $color-features;
+
+    }
+
+
+}

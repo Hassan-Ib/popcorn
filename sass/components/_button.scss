@@ -1,0 +1,28 @@
+.btn{
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: $letter-spacing;
+        border: 2px solid black;
+        // background-color: black;
+        padding: .5em .8em;
+        color: white;
+
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+
+        background-color: black;
+        color: white;
+    }
+    &:active{
+        transform: translateY(0);
+        // background-color: white;
+        // color: black;
+    }
+}

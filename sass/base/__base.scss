@@ -1,0 +1,31 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    // font-size: 62.5%;
+    font-size: 50%;
+    font-size: 43.75%;
+
+
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5;
+    // overflow: hidden;
+
+}
+

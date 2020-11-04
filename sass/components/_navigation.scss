@@ -1,0 +1,140 @@
+.navigation{
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    padding-left: 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    clip-path: circle(1rem at 110% -10%);
+    transition: clip-path 500ms cubic-bezier(.17,.67,.65,.42);
+    cursor: none;
+
+    &::before{
+        clear: both;
+        content: "";
+        display: table;
+        margin-top: -1px;
+        height: 0;
+    }
+    
+    &__list{
+        list-style: none;
+        font-size: 2rem;
+        text-transform: capitalize;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+
+
+        
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            width: 100%;
+            color: $primary-color;
+            padding: .5em 1em;
+            letter-spacing: 2px;
+            background-image: linear-gradient(120deg , transparent 50%, $primary-color 50%);
+            background-position: 0%;
+            background-size: 300%;
+            transition: all 300ms ease-in-out;
+
+
+
+        }
+
+        &:hover{
+            color: $primary-color-darker;
+            background-position: 100%;
+        }
+    }
+}
+
+
+.navigation.clip{
+    clip-path: circle(100%);
+    cursor: pointer;
+
+}
+
+.burger-box{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: $primary-color-dark;
+    z-index: 2000;
+    transition: transform 200ms ease;
+    backface-visibility: hidden;
+    &:hover{
+        transform: translateY(-3px);
+    }
+    &:active{
+        transform: translate(0);
+    }
+
+        
+}
+
+.burger{
+    width: 3rem;
+    height: 2px;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0);
+    transition: all 300ms ease-out;
+    z-index: 2001;
+    background-color: $primary-color-light;
+
+
+
+    &::before,
+    &::after{
+        display: block;
+        content: "";
+        width: 1.5rem;
+        height: 2px;
+        background-color: $primary-color-light;
+        position: absolute;
+        transition: all 500ms ease-out;
+
+    }
+    &::before{
+        margin-top: -1rem;
+        right: 0;
+    }
+    &::after{
+        margin-top: 1rem;
+    }
+    
+}
+
+.burger.rotate{
+    background-color: transparent;
+    &::before{
+        margin: 0;
+        width: 3rem;
+        transform: rotate(-135deg);
+        background-color: orangered;
+    }
+
+    &::after{
+        margin: 0;
+        width: 3rem;
+        transform: rotate(135deg);
+        background-color: orangered;
+    }
+
+}
+

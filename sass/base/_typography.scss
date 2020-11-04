@@ -1,0 +1,22 @@
+.header{
+    .hero__text{
+        &--main{
+            font-size: $font-size-bg;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: $letter-spacing;
+        }
+
+        &--secondary{
+            font-size: $font-size-p;
+            font-weight: 400;
+            letter-spacing: $letter-spacing;
+        }
+
+    }  
+    
+}
+
+.section__title{
+    text-transform: uppercase;
+}
