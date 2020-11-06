@@ -7,8 +7,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 50%;
-  font-size: 43.75%; }
+  font-size: 50%; }
 
 a {
   text-decoration: none; }
@@ -81,10 +80,10 @@ body {
   .header .hero {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%); }
     .header .hero__text {
-      max-width: 70%;
+      max-width: 90%;
       margin: 0 auto;
       margin-bottom: 3rem;
       color: #feffff; }
@@ -290,7 +289,7 @@ body {
     color: #feffff; }
 
 .feature {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   background-color: #feffff;
   box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
