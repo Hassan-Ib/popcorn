@@ -66,7 +66,7 @@ body {
   position: relative;
   background-color: #feffff;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/yulia-khlebnikova-iuwMdNq0-s4-unsplash.jpg);
   background-position: center;
   background-size: cover; }
   .header .design {
