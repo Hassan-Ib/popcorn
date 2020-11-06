@@ -1,7 +1,5 @@
 
 let header = document.querySelector('.navigation__list').getBoundingClientRect().height;
-
-console.log(header)
 let nav = document.querySelector('.navigation');
 let burger = document.querySelector('.burger-box');
 let child = document.querySelector('.burger')
